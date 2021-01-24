@@ -1,0 +1,4 @@
+to hi
+  print [What's your name?]
+  print sentence [Nice to meet you, ] word first readlist "!
+end
