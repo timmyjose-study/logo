@@ -1,0 +1,10 @@
+to split.name :name
+  print sentence [Your first name is] first :name
+  print sentence [Your last name is] first butfirst :name
+end
+
+to converse
+  print [Please type your full name.]
+  split.name readlist
+end
+  

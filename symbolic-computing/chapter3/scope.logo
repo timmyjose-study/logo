@@ -1,0 +1,20 @@
+to top :outer :inner
+  print [I'm in top.]
+  print sentence [:outer is] :outer
+  print sentence [:inner is] :inner
+  bottom "x
+  print [I'm in top again.]
+  print sentence [:outer is] :outer
+  print sentence [:inner is] :inner
+end
+
+to bottom :inner
+  print [I'm in bottom.]
+
+  ; the subprocedure bottom has access to the superprocedure
+  print sentence [:outer is] :outer
+
+  ; this is essentially shadowing even though it doesn't appear
+  ;to be so
+  print sentence [:inner is] :inner
+end

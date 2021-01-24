@@ -1,0 +1,11 @@
+to second :thing
+  output first butfirst :thing
+end
+
+to butfirstandsecondandlast :thing
+  output butfirst butfirst butlast :thing
+end
+
+to query :thing
+  print (sentence second :thing first :thing butfirstandsecondandlast :thing word last :thing "?)
+end

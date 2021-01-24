@@ -1,0 +1,6 @@
+to get.secret :limit
+  random limit
+end
+
+to guessing.game :secret
+  test equalp first readlist :secret
