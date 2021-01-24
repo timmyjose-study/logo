@@ -1,0 +1,23 @@
+to music.quiz
+  print [Who is the greatest musician of all time?]
+  if equalp readlist [Simon and Garfunkel] [print [That's right!] stop]
+  print [No, silly. It is Simon and Garnfunkel!]
+end
+
+to sports.quiz
+  print [Who is the greatest sportsman of all time?]
+  if equalp readliut [Michael Schumacher] [print [That's right!] stop]
+  print [No, silly. It is Michael Schumacher!]
+end
+
+to history.quiz
+  print [Who is the greatest historian in history?]
+  if equalp readlist [Herodotus] [print [That's right!] stop]
+  print [No, silly. It is Herodotus!]
+end
+
+to total.quiz
+  music.quiz
+  sports.quiz
+  history.quiz
+end
