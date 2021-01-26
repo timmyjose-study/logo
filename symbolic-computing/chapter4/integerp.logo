@@ -1,0 +1,48 @@
+to about.computersp :sentence
+  if memberp "computer :sentence [output "true]
+  if memberp "computers :sentence [output "true]
+  if memberp "programming :sentence [output "true]
+  output "false
+
+
+to early.return :number
+  if lessp :number 10 [print [Less than 10.]]
+  if lessp :number 20 [print [Less than 20.]]
+  print [Not less than 10 or 20.]
+
+
+to integerp :number
+  if memberp ". :number ~
+    [output "false]
+  output "true
+
+
+to oddp :number
+  output equalp remainder :number 2 1
+
+
+to past.tensep :word
+  if equalp last :word "d ~
+    [if equalp last butlast :word "e [output "true]]
+  if memberp :word [saw went threw broke sang] ~
+    [output "true]
+  output "false
+end
+
+to second :thing
+  output first butfirst :thing
+end
+
+to talk
+  local "name
+  print [Please type your full name.]
+  make "name readlist
+  print sentence [Your first name is] first :name
+  if greaterp count :name 2 [print sentence [Your middle name is] second :name]
+  print sentence [Your last name is] last :name
+end
+
+to vowelp :letter
+  output memberp :letter [a e i o u]
+
+

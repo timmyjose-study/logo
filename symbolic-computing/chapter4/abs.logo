@@ -1,0 +1,5 @@
+; also demonstrating the use of ifelse as an operation
+
+to abs :number
+  output ifelse lessp :number 0 [-:number] [:number] ; the square brackets suspend evaluation as in Lisp
+end

@@ -1,0 +1,13 @@
+to quiz
+  qa [Who is the best musician of all time?] [Simon and Garfunkel]
+  qa [Who is the best sportsman of all time?] [Michael Schumacher]
+  qa [What is 2 + 3?] [5]
+end
+
+to qa :question :answer
+  local "guess
+  print :question
+  make "guess readlist
+  if equalp :guess :answer [print [That's right!] stop]
+  print sentence [Sorry, it's] :answer
+end

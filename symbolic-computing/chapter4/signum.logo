@@ -1,0 +1,3 @@
+to signum :number
+  output ifelse lessp :number 0 ["-1] [ifelse equalp :number 0 ["0] ["1]]
+end
