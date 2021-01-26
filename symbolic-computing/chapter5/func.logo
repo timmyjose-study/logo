@@ -1,0 +1,11 @@
+to f :x
+  output 3 * :x - 6
+end
+
+to instrument :beatle
+  if :beatle = "John [output [rhythm guitar]]
+  if :beatle = "Paul [output [bass guityar]]
+  if :beatle = "George [output [lead guitar]]
+  if :beatle = "Ringo [output [drums]]
+  output [unknown artist]
+end

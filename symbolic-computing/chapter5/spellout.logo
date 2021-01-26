@@ -1,0 +1,3 @@
+to spellout :cards
+  output (sentence butlast :cards "of find [equalp last :cards first ?] [clubs diamonds hearts spades])
+end

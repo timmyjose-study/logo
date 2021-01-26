@@ -1,0 +1,13 @@
+to exaggerate :words
+  output map "exaggerator :words
+end
+
+to exaggerator :word
+  output ifelse numberp :word ~
+    [product 2 :word] ~
+    [ifelse equalp :word "bad ~
+      ["terrible] ~
+      [ifelse equalp :word "good ~
+        ["great]
+        [:word]]]
+end

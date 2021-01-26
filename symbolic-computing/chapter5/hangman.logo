@@ -1,0 +1,3 @@
+to hangword :secret :guessed
+  output map [ifelse memberp ? :guessed [?] ["-]] :secret
+end

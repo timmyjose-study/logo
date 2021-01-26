@@ -1,0 +1,7 @@
+to biggest :numbers
+  output reduce "bigger :numbers
+end
+
+to bigger :a :b
+  output ifelse greaterp :a :b [:a] [:b]
+end
