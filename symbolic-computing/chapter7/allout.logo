@@ -1,0 +1,32 @@
+to down :word
+  if emptyp :word [stop]
+  print :word
+  down butlast :word
+end
+
+to up :word
+  if emptyp :word [stop]
+  up butlast :word
+  print :word
+end
+
+to downup :word
+  print :word
+  if equalp count :word 1 [stop]
+  downup butlast :word
+  print :word
+end
+
+to inout :word
+  inout.sub :word 0
+end
+
+to inout.sub :word :spaces
+  repeat :spaces [type "| |]
+  print :word
+  if equalp count :word 1 [stop]
+  inout.sub butfirst :word (:spaces + 1)
+  repeat :spaces [type "| |]
+  print :word
+end
+

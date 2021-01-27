@@ -1,0 +1,23 @@
+to diamond :word
+  diamond.top :word
+  diamond.bottom :word
+end
+
+to diamond.top :word
+  local "len
+  make "len count :word
+  ifelse evenp len ~
+    [] ~
+    []
+end
+
+to diamond.bottom :word
+end
+
+to evenp :number
+  output equalp remainder :number 2 0
+end
+
+to oddp :number
+  output not equalp remainder :number 2 0
+end

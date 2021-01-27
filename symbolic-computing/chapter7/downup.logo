@@ -1,0 +1,34 @@
+;to downup1 :word
+;  print :word
+;end
+;
+;to downup2 :word
+;  print :word
+;  downup1 butlast :word
+;  print :word
+;end
+;
+;to downup3 :word
+;  print :word
+;  downup2 butlast :word
+;  print :word
+;end
+;
+;to downup4 :word
+;  print :word
+;  downup3 butlast :word
+;  print :word
+;end
+;
+;to downup5 :word
+;  print :word
+;  downup4 butlast :word
+;  print :word
+;end
+
+to downup :word
+  print :word
+  if equalp count :word 1 [stop]
+  downup butlast :word
+  print :word
+end

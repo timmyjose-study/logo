@@ -1,0 +1,6 @@
+to countdown :count
+  if equalp :count 0 [print "Blastoff! stop]
+  wait 100
+  print :count
+  countdown (:count - 1)
+end

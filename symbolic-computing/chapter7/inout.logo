@@ -1,0 +1,27 @@
+;to inout :word
+;  inout.formatted :word 0
+;end
+;
+;to inout.formatted :word :spaces
+;  print :word
+;  if equalp count :word 1 [stop]
+;  for [i 0 :spaces 1] ~
+;    [type "| |]
+;  inout.formatted butfirst :word (:spaces + 1)
+;  for [i 1 :spaces 1] ~
+;    [type "| |]
+;  print :word
+;end
+
+to inout :word
+  inout.formatted :word 0
+end
+
+to inout.formatred :word :spaces
+  print :word
+  if equalp count :word 1 [stop]
+  repeat :spaces [type "| |]
+  inout.formatted butfirst :word (:spaces + 1)
+  repeat :spaces [type "| |]
+  print :word
+end
