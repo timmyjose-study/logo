@@ -1,0 +1,21 @@
+to roman.to.arabic :number
+  output addup map.se "digit :number
+end
+
+to digit :digit
+  output lookup :digit [[I 1] [V 5] [X 10] [L 50] [C 100] [D 500] [M 1000 ]]
+end
+
+to lookup :word :dictionary
+  if emptyp :dictionary [output "]
+  if equalp :word first first :dictionary [output last first :dictionary]
+  output lookup :word butfirst :dictionary
+end
+
+to addup :list
+  if emptyp :list [output 0]
+  if emptyp butfirst :list [output first :list]
+  if (first :list) < (first butfirst :list) ~
+    [output sum ((first butfirst :list) - (first :list)) addup butfirst butfirst :list]
+  output sum first :list addup butfirst :list
+end

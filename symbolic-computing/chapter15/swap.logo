@@ -1,0 +1,9 @@
+to swap :list
+  if emptyp :list [print [Swap does not empty the empty input] stop]
+  if equalp count :list 1 [print [Swap does not like the singleton input] stop]
+  output list second :list first :list
+end
+
+to second :thing
+  output first butfirst :thing
+end
