@@ -1,0 +1,10 @@
+; trace "foo
+; step "foo
+; untrace "foo
+; unstep "foo
+to downup :word
+  print :word
+  if equalp count :word 1 [stop]
+  downup butlast :word
+  print :word
+end
