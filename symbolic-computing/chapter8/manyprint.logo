@@ -1,0 +1,6 @@
+to manyprint :times :sentence
+  if equalp :times 0 [stop]
+  print :sentence
+  manyprint :times-1 :sentence
+end
+  

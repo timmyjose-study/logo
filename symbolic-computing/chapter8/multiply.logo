@@ -1,0 +1,5 @@
+to multiply :thing :times
+  if equalp :times 0 [stop]
+  print :thing
+  multiply (word :thing first :thing) :times-1
+end

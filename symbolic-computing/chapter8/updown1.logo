@@ -1,0 +1,10 @@
+to updown :word
+  updown1 first :word butfirst :word
+end
+
+to updown1 :now :later
+  print :now
+  if emptyp :later [stop]
+  updown1 (word :now first :later) butfirst :later
+  print :now
+end

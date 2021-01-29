@@ -1,0 +1,16 @@
+to up :word 
+  if emptyp :word [stop]
+  up butlast :word
+  print :word
+end
+
+to down :word
+  if emptyp :word [stop]
+  print :word
+  down butfirst :word
+end
+
+to updown :word
+  up :word
+  down butlast :word
+end

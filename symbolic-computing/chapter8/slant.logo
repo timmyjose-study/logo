@@ -1,0 +1,10 @@
+to slant :word
+  slant.sub :word 0
+end
+
+to slant.sub :word :spaces
+  if emptyp :word [stop]
+  repeat :spaces [type "| |]
+  print first :word
+  slant.sub butfirst :word :spaces+1
+end

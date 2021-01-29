@@ -1,0 +1,5 @@
+to countdown :number
+  if equalp :number 0 [stop]
+  print :number
+  countdown :number-1
+end
