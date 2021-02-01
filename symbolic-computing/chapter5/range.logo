@@ -1,0 +1,3 @@
+to range :from :to
+  output cascade :to-:from [sentence ? (1+last ?)] (sentence :from)
+end

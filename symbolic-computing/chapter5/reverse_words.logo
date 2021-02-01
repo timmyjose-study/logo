@@ -1,0 +1,3 @@
+to reverse.sentence :sentence
+  output (cascade count :sentence [sentence first ?2 ?1] [] [butfirst ?2] :sentence)
+end
