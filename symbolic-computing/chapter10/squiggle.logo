@@ -1,0 +1,8 @@
+to squiggle
+  forward 100
+  right 120
+  forward 45
+  right 120
+  forward 75
+  right 30
+end
