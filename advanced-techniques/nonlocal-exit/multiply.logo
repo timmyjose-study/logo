@@ -1,0 +1,31 @@
+;to multiply :numbers
+;  if emptyp :numbers [output 1]
+;  output product first :numbers multiply butfirst :numbers
+;end
+
+;to multiply :numbers
+;  if emptyp :numbers [output 1]
+;  if equalp first :numbers 0 [output 0]
+;  output product first :numbers multiply butfirst :numbers
+;end
+
+;to multiply :numbers
+;  output catch "zero [multiply.sub :numbers]
+;end
+;
+;to multiply.sub :numbers
+;  if emptyp :numbers [output 1]
+;  if equalp first :numbers 0 [(throw "zero 0)] ; no stack unwinding occurs here
+;  output product first :numbers multiply.sub butfirst :numbers
+;end
+
+to multiply :numbers
+  output catch "early [multiply.sub :numbers]
+end
+
+to multiply.sub :numbers
+  if emptyp :numbers [output 1]
+  if not numberp first :numbers [(throw "early "non-number)]
+  if equalp first :numbers 0 [(throw "early 0)]
+  output product first :numbers multiply.sub butfirst :numbers
+end

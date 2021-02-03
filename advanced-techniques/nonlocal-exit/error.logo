@@ -1,0 +1,12 @@
+; the way this works is as follows - whenever an error occurs, LOGO invokes `throw "error`, and if there is a handler, 
+; then it's caught by that handler else the error output is printed at the top-level.
+
+to multiply :numbers
+  catch "error [output multiply.sub :numbers]
+  output "non-number
+end
+
+to multiply.sub :numbers
+  if emptyp :numbers [output 1]
+  output product first :numbers multiply.sub butfirst :numbers
+end

@@ -1,0 +1,4 @@
+to sample 
+  catch "error [print :nonexistent]
+  show error ; error contains details of the last error to have occurred
+end
