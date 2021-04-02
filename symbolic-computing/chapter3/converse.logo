@@ -1,0 +1,9 @@
+to converse 
+  print [please type your full name.]
+  parse.name readlist
+end
+
+to parse.name :name
+  print sentence [Your first name is] first :name
+  print sentence [Your last name is] last :name
+end

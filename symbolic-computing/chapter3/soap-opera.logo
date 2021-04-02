@@ -1,0 +1,6 @@
+to soap.opera :first :second :third
+  print (sentence :first "loves word :second ".)
+  print (sentence "However, :second [doesn't care for] :first "particularly.)
+  print (sentence :second [is madly in love with] word :third ".)
+  print (sentence :first [doesn't like] :third [very much.])
+end

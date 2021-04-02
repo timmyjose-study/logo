@@ -1,0 +1,4 @@
+to greet :name
+  print sentence "Hello, :name
+  print [Pleased to meet you.]
+end

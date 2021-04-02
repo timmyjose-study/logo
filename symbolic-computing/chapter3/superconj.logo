@@ -1,0 +1,12 @@
+to superconj :verb :endings
+  conj "je 1
+  conj "tu 2
+  conj "il 3
+  conj "nous 4
+  conj "vous 5
+  conj "elles 6
+end
+
+to conj :prefix :index
+  print sentence :prefix word butlast butlast :verb item :index :endings
+end
