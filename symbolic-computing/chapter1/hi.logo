@@ -1,0 +1,7 @@
+to hi
+  print [Hi. What's your name?]
+  print sentence [How are you,] word first readlist "?
+  ignore readlist
+  print [That's nice.]
+end
+  
