@@ -1,0 +1,5 @@
+to hello
+  print "Hello
+  print [This is Logo speaking.]
+  print [What's up?]
+end
