@@ -1,0 +1,13 @@
+; solve a quadratic equation using the discriminant method
+
+to quadratic :a :b :c
+  local "discriminant
+  make "discriminant (:b * :b) - (4 * :a * :c)
+  if :discriminant < 0 [print [No solution.] stop]
+  make "discriminant sqrt :discriminant
+  local "x1
+  local "x2
+  make "x1 (-:b + :discriminant) / (2 * :a)
+  make "x2 (-:b - discriminant) / (2 * :a)
+  print (sentence [x = ] :x1 [or] :x2)
+end

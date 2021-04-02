@@ -1,0 +1,11 @@
+to fullp :datum
+  output not emptyp :datum
+end
+
+to realwordp :datum
+  output and wordp :datum not numberp :datum
+end
+
+to digitp :datum
+  output and numberp :datum equalp count :datum 1
+end

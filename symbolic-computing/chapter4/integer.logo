@@ -1,0 +1,5 @@
+to integerp :number
+  if memberp ". :number [output "false]
+  if numberp :number [output "true]
+  output "false
+end

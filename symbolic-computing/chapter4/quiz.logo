@@ -1,0 +1,23 @@
+to qa :question :answer
+  ifelse ask.thrice :question :answer [print [Well done!]] [print [Better luck next time!]]
+  print []
+end
+
+to ask.thrice :question :answer
+  repeat 3 [if ask.once :question :answer [output "true]]
+  print sentence [The answer is] :answer
+  output "false
+end
+
+to ask.once :question :answer
+  print :question
+  if equalp readlist :answer [print [That's correct] output "true]
+  print [Sorry, that's wrong.]
+  output "false
+end
+
+to quiz
+  qa [Who is the best musician of all time?] [Simon and Garfunkel]
+  qa [Who is the best sportsman of all time?] [Michael Schumacher]
+  qa [Who is the greatest footballer of all time?] [Diego Maradona]
+end

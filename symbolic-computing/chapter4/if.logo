@@ -1,0 +1,6 @@
+to about.computersp :sentence
+  if memberp "computer :sentence [output "true] ; output returns immediately
+  if memberp "computers :sentence [output "true]
+  if memberp "programming :sentence [output "true]
+  output "false
+end
