@@ -1,5 +1,0 @@
-to primer2 :name
-  print (sentence first thing "name [is for] word thing "name ".)
-  print (sentence "Run word thing "name ", "run.)
-  print (sentence "See word thing "name " "run.)
-end

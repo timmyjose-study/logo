@@ -1,5 +1,0 @@
-to early.return :number
-  if lessp :number 10 [print [Less than 10.]]
-  if lessp :number 20 [print [Less than 20.]]
-  print [Not less than 10 or 20.]
-end

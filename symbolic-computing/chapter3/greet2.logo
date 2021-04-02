@@ -1,4 +1,0 @@
-to greet2 :name
-  print sentence "Hello, thing "name
-  print [Pleased to meet you.]
-end

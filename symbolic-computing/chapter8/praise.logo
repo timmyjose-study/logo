@@ -1,5 +1,0 @@
-to praise :flavours 
-  if emptyp :flavours [stop]
-  print sentence [I love] first :flavours
-  praise butfirst :flavours
-end

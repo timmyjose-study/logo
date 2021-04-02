@@ -1,5 +1,0 @@
-to primer :name
-  print (sentence first :name [is for] word :name ".)
-  print (sentence "Run, word :name ", "run.)
-  print (sentence "See :name "run.)
-end

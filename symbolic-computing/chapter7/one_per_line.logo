@@ -1,6 +1,0 @@
-to one.per.line :word
-  if emptyp :word [stop]
-  wait 50
-  print first :word
-  one.per.line butfirst :word
-end

@@ -1,6 +1,0 @@
-to two.per.line :things
-  if equalp count :things 0 [stop]
-  if equalp count :things 1 [print first :things stop]
-  print sentence first :things first butfirst :things 
-  two.per.line butfirst butfirst :things
-end

@@ -1,7 +1,0 @@
-to initials :words
-  output map "first filter "non.connectives :words
-end
-
-to non.connectives :word
-  output not memberp :word [and if for not of to be then else it is by at in]
-end

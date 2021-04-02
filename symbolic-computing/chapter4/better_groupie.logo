@@ -1,9 +1,0 @@
-to better.groupie
-  local "name
-  print [Hi, who are you?]
-  make "name readlist
-  test equalp :name [Ray Davies] ; a single test can be used multiple times
-  iftrue [print [May I have your autograph, please?]]
-  iftrue [print [And may I also borrow a thousand dollars?]]
-  iffalse [print sentence [Oh, hello] first :name]
-end

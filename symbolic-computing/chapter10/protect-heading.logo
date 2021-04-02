@@ -1,6 +1,0 @@
-to protect.heading :squig
-  local "oldheading
-  make "oldheading heading
-  run :squig
-  setheading :oldheading
-end

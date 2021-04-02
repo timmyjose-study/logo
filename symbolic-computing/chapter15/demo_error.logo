@@ -1,6 +1,0 @@
-; make "erract [pause]
-; ern "erract
-
-to demo.error 
-  print first :nonesuch
-end

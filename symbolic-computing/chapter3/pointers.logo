@@ -1,3 +1,0 @@
-to increment :thing
-  make :thing (thing :thing) + 1
-end

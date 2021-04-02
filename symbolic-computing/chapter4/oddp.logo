@@ -1,3 +1,0 @@
-to oddp :number
-  output equalp remainder :number 2 1
-end

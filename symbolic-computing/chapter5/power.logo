@@ -1,3 +1,0 @@
-to raise :base :exponent
-  output cascade :exponent [? * :base] 1
-end

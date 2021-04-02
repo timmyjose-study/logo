@@ -1,4 +1,0 @@
-:generate a random number in the range [low, high)
-to get.random :low :high
-  output sum modulo random :high difference :high :low :low
-end

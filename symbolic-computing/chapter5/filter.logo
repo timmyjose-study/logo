@@ -1,7 +1,0 @@
-to vowelp :letter
-  output memberp :letter [a e i o u]
-end
-
-to beatlep :person
-  output memberp :person [John Paul Ringo George]
-end

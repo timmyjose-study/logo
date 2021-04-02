@@ -1,5 +1,0 @@
-to spread :range
-  for [digit [first :range] [last :range]] ~
-    [type digit]
-  print []
-end

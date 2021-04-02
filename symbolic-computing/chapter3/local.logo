@@ -1,7 +1,0 @@
-to new.converse
-  local "name
-  print [What is your name?]
-  make "name readlist
-  print sentence [Your first name is] first :name
-  print sentence [Your second name is] last :name
-end

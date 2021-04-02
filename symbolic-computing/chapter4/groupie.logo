@@ -1,8 +1,0 @@
-to groupie
-  local "name
-  print [Hi, who are you?]
-  make "name readlist
-  ifelse equalp :name [Ray Davies] ~
-    [print [May I have your autograph?]] ~
-    [print sentence "Hi, first :name]
-end

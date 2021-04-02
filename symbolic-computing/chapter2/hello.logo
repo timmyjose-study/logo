@@ -1,5 +1,0 @@
-to hello
-  print word "Hello "there
-  print [This is Logo speaking.]
-  print [What's new?]
-end

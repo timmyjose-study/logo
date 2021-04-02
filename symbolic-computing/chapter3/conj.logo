@@ -1,8 +1,0 @@
-to conj :word
-  print sentence "je butlast :word
-  print sentence "tu word butlast :word "s
-  print sentence "il butlast :word
-  print sentence "nous word butlast butlast :word "ons
-  print sentence "vous word butlast :word "z
-  print sentence "elles word butlast :word "nt
-end
