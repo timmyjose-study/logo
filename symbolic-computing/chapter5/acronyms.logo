@@ -1,0 +1,11 @@
+to acronyms :sentence
+  output reduce "word initials :sentence
+end
+
+to initials :sentence
+  output map "first filter "importantp :sentence
+end
+
+to importantp :word
+  output not memberp :word [a an in is of for by with from at and with to the]
+end

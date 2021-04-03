@@ -1,0 +1,10 @@
+to exaggerate :sentence
+  output map "exaggerator :sentence
+end
+
+to exaggerator :datum
+  if numberp :datum [output 2*:datum]
+  if equalp :datum "good [output "great]
+  if equalp :datum "bad [output "terrible]
+  output :datum
+end

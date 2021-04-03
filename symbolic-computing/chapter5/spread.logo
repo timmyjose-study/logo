@@ -1,0 +1,4 @@
+to spread :ends
+  for [value [first :ends] [last :ends]] [type :value]
+  print []
+end

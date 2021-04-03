@@ -1,0 +1,3 @@
+to initials :name
+  output map "first :name
+end

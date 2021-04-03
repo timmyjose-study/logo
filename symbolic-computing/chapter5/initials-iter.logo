@@ -1,0 +1,7 @@
+to initials :name
+  local "result
+  make "result []
+  for [i 1 [count :name]] ~
+    [make "result sentence :result first item i :name]
+  output :result
+end

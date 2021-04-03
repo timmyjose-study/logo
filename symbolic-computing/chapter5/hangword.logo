@@ -1,0 +1,7 @@
+to hangword :secret :guessed
+  output map "hangletter :secret
+end
+
+to hangletter :letter
+  output ifelse memberp :letter :guessed [:letter] ["_]
+end
