@@ -1,0 +1,25 @@
+; A simple quiz program in LOGO!
+
+to total.quiz
+  music.quiz
+  sports.quiz
+  science.quiz
+end
+
+to music.quiz
+  print [Who is the greatest musician of all time?]
+  if equalp readlist [Mozart] [print [That's right!] stop]
+  print [No, silly. It's Mozart!]
+end
+
+to sports.quiz
+  print [Who is the greatest sportsman of all time?]
+  if equalp readlist [Michael Schumacher] [print [That's right!] stop]
+  print [No, you fool! It's Michael Schumacher]
+end
+
+to science.quiz
+  print [Who is the greatest scientist of all time?]
+  if equalp readlist [Isaac Newton] [print [That's right!] stop]
+  print [No, you absolute cretin! It's Isaac Newton]
+end

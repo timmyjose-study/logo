@@ -1,0 +1,14 @@
+to start
+  cleartext
+  print [Welcome to Berkeley LOGO v3.3]
+  type "|? |
+  process readlist
+  wait 100
+  print [Ha, ha, fooled you!!]
+end
+
+to process :instruction
+  test emptyp :instruction
+  iftrue [type "|? | process readlist stop]
+  iffalse [print sentence [|I don't know how to|] first :instruction]
+end
