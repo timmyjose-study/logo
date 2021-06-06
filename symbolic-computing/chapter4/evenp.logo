@@ -1,3 +1,0 @@
-to evenp :number
-  output equalp remainder :number 2 0
-end

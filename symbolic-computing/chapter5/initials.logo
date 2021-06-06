@@ -1,3 +1,0 @@
-to initials :name
-  output sentence first first :name first last :name
-end

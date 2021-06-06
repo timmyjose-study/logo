@@ -1,3 +1,0 @@
-to abs :number
-  output ifelse lessp :number 0 [-:number] [:number]
-end

@@ -1,3 +1,0 @@
-to vowelp :letter
-  output memberp :letter [a e i o u]
-end

@@ -1,8 +1,0 @@
-to conjugate :verb
-  print sentence "je butlast :verb
-  print sentence "tu word butlast :verb "s
-  print sentence "il butlast :verb
-  print sentence "nous word butlast butlast :verb "ons
-  print sentence "vous word butlast :verb "z
-  print sentence "elles word butlast :verb "nt
-end

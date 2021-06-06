@@ -1,7 +1,0 @@
-to crossproduct :these :those
-  output map.se [prepend.each :these ?] :those
-end
-
-to prepend.each :these :that
-  output map [sentence ? :that] :these
-end

@@ -1,3 +1,0 @@
-to decrement :something
-  make :something (thing :something)-1
-end

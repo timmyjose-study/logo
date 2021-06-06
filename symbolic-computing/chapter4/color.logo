@@ -1,5 +1,0 @@
-to color :card
-  ifelse or equalp last :card "h equalp last :card "d ~
-    [print "red] ~
-    [print "black]
-end

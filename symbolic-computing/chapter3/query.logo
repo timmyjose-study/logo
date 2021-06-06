@@ -1,7 +1,0 @@
-to second :things
-  output first butfirst :things
-end
-
-to query :sentence
-  print (sentence second :sentence first :sentence butfirst butfirst butlast :sentence word last :sentence "?)
-end

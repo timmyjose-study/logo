@@ -1,5 +1,0 @@
-to past.tensep :word
-  if and equalp last :word "d equalp last butlast :word "e [output "true]
-  if memberp :word [saw went] [output "true]
-  output "false
-end

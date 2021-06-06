@@ -1,7 +1,0 @@
-to biggest :numbers
-  output reduce "max :numbers
-end
-
-to max :a :b
-  output ifelse greaterp a b [:a] [:b]
-end

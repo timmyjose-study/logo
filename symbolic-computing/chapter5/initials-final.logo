@@ -1,7 +1,0 @@
-to initials :name
-  output map "first filter "importantp :name
-end
-
-to importantp :word
-  output not memberp :word [the an a of is with by at for with on in to from]
-end
